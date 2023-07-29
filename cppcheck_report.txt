@@ -1,0 +1,1844 @@
+examples/device/audio_4_channel_mic/src/main.c:415:12: style: The scope of the variable 'dataVal' can be reduced. [variableScope]
+  uint16_t dataVal;
+           ^
+examples/device/cdc_msc/src/msc_disk.c:242:8: style: The scope of the variable 'in_xfer' can be reduced. [variableScope]
+  bool in_xfer = true;
+       ^
+examples/device/cdc_msc_freertos/src/freertos_hook.c:37:18: error: syntax error [syntaxError]
+  TU_ASSERT(false, );
+                 ^
+examples/device/cdc_msc_freertos/src/msc_disk.c:220:8: style: The scope of the variable 'in_xfer' can be reduced. [variableScope]
+  bool in_xfer = true;
+       ^
+examples/device/dfu/src/usb_descriptors.c:63:0: information: Skipping configuration 'CFG_TUD_CDC' since the value of 'CFG_TUD_CDC' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    .idProduct          = USB_PID,
+^
+examples/device/dfu_runtime/src/usb_descriptors.c:63:0: information: Skipping configuration 'CFG_TUD_CDC' since the value of 'CFG_TUD_CDC' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    .idProduct          = USB_PID,
+^
+examples/device/dynamic_configuration/src/msc_disk.c:220:8: style: The scope of the variable 'in_xfer' can be reduced. [variableScope]
+  bool in_xfer = true;
+       ^
+examples/device/hid_composite_freertos/src/freertos_hook.c:37:18: error: syntax error [syntaxError]
+  TU_ASSERT(false, );
+                 ^
+examples/device/hid_composite_freertos/src/main.c:276:21: style:inconclusive: Function 'hid_task' argument 1 names different: declaration 'params' definition 'param'. [funcArgNamesDifferent]
+void hid_task(void* param)
+                    ^
+examples/device/hid_composite_freertos/src/main.c:88:21: note: Function 'hid_task' argument 1 names different: declaration 'params' definition 'param'.
+void hid_task(void* params);
+                    ^
+examples/device/hid_composite_freertos/src/main.c:276:21: note: Function 'hid_task' argument 1 names different: declaration 'params' definition 'param'.
+void hid_task(void* param)
+                    ^
+examples/device/msc_dual_lun/src/msc_disk_dual.c:322:8: style: The scope of the variable 'in_xfer' can be reduced. [variableScope]
+  bool in_xfer = true;
+       ^
+examples/device/net_lwip_webserver/src/usb_descriptors.c:84:0: information: Skipping configuration 'CFG_TUD_ECM_RNDIS' since the value of 'CFG_TUD_ECM_RNDIS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    .idProduct          = USB_PID,
+^
+examples/device/usbtmc/src/usbtmc_app.c:244:20: error: syntax error [syntaxError]
+    TU_ASSERT(false,);
+                   ^
+examples/host/cdc_msc_hid/src/hid_app.c:261:5: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+    len--;
+    ^
+examples/host/cdc_msc_hid/src/msc_app.c:51:3: warning: %lu in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'. [invalidPrintfArgType_uint]
+  printf("Disk Size: %lu MB\r\n", block_count / ((1024*1024)/block_size));
+  ^
+examples/host/cdc_msc_hid/src/msc_app.c:52:3: warning: %lu in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'. [invalidPrintfArgType_uint]
+  printf("Block Count = %lu, Block Size: %lu\r\n", block_count, block_size);
+  ^
+examples/host/cdc_msc_hid/src/msc_app.c:52:3: warning: %lu in format string (no. 2) requires 'unsigned long' but the argument type is 'unsigned int'. [invalidPrintfArgType_uint]
+  printf("Block Count = %lu, Block Size: %lu\r\n", block_count, block_size);
+  ^
+examples/host/hid_controller/src/hid_app.c:263:3: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+  len--;
+  ^
+examples/host/hid_controller/src/hid_app.c:256:15: style: The scope of the variable 'dpad_str' can be reduced. [variableScope]
+  const char* dpad_str[] = { "N", "NE", "E", "SE", "S", "SW", "W", "NW", "none" };
+              ^
+examples/host/hid_controller/src/hid_app.c:263:6: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+  len--;
+     ^
+examples/host/msc_file_explorer/src/msc_app.c:114:3: warning: %lu in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'. [invalidPrintfArgType_uint]
+  printf("Disk Size: %lu MB\r\n", block_count / ((1024*1024)/block_size));
+  ^
+examples/typec/power_delivery/src/main.c:101:13: warning: %lu in format string (no. 1) requires 'unsigned long' but the argument type is 'unsigned int'. [invalidPrintfArgType_uint]
+            printf("[Fixed] %lu mV %lu mA\r\n", voltage_mv, current_ma);
+            ^
+examples/typec/power_delivery/src/main.c:101:13: warning: %lu in format string (no. 2) requires 'unsigned long' but the argument type is 'unsigned int'. [invalidPrintfArgType_uint]
+            printf("[Fixed] %lu mV %lu mA\r\n", voltage_mv, current_ma);
+            ^
+hw/bsp/brtmm90x/family.c:239:5: error: There is an unknown macro here somewhere. Configuration is required. If CRITICAL_SECTION_END is a macro then please configure it. [unknownMacro]
+    CRITICAL_SECTION_END
+    ^
+hw/bsp/brtmm90x/family.c:79:0: information: Skipping configuration 'BOARD_GPIO_BUTTON' since the value of 'BOARD_GPIO_BUTTON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_function(BOARD_GPIO_BUTTON, pad_func_0);
+^
+hw/bsp/brtmm90x/family.c:81:0: information: Skipping configuration 'BOARD_GPIO_BUTTON' since the value of 'BOARD_GPIO_BUTTON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_pull(BOARD_GPIO_BUTTON, (BOARD_GPIO_BUTTON_STATE_ACTIVE == 0)?pad_pull_pullup:pad_pull_pulldown);
+^
+hw/bsp/brtmm90x/family.c:82:0: information: Skipping configuration 'BOARD_GPIO_BUTTON' since the value of 'BOARD_GPIO_BUTTON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_dir(BOARD_GPIO_BUTTON, pad_dir_input);
+^
+hw/bsp/brtmm90x/family.c:197:0: information: Skipping configuration 'BOARD_GPIO_BUTTON' since the value of 'BOARD_GPIO_BUTTON' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    state = (gpio_read(BOARD_GPIO_BUTTON) == BOARD_GPIO_BUTTON_STATE_ACTIVE)?1:0;
+^
+hw/bsp/brtmm90x/family.c:73:0: information: Skipping configuration 'BOARD_GPIO_LED' since the value of 'BOARD_GPIO_LED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_function(BOARD_GPIO_LED, pad_func_0);
+^
+hw/bsp/brtmm90x/family.c:74:0: information: Skipping configuration 'BOARD_GPIO_LED' since the value of 'BOARD_GPIO_LED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_idrive(BOARD_GPIO_LED, pad_drive_12mA);
+^
+hw/bsp/brtmm90x/family.c:75:0: information: Skipping configuration 'BOARD_GPIO_LED' since the value of 'BOARD_GPIO_LED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_dir(BOARD_GPIO_LED, pad_dir_output);
+^
+hw/bsp/brtmm90x/family.c:187:0: information: Skipping configuration 'BOARD_GPIO_LED' since the value of 'BOARD_GPIO_LED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_write(BOARD_GPIO_LED, (state == 0)?(BOARD_GPIO_LED_STATE_ON?0:1):BOARD_GPIO_LED_STATE_ON);
+^
+hw/bsp/brtmm90x/family.c:105:0: information: Skipping configuration 'BOARD_GPIO_REMOTE_WAKEUP' since the value of 'BOARD_GPIO_REMOTE_WAKEUP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_dir(BOARD_GPIO_REMOTE_WAKEUP, pad_dir_input);
+^
+hw/bsp/brtmm90x/family.c:106:0: information: Skipping configuration 'BOARD_GPIO_REMOTE_WAKEUP' since the value of 'BOARD_GPIO_REMOTE_WAKEUP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_pull(BOARD_GPIO_REMOTE_WAKEUP, pad_pull_pullup);
+^
+hw/bsp/brtmm90x/family.c:110:0: information: Skipping configuration 'BOARD_GPIO_REMOTE_WAKEUP' since the value of 'BOARD_GPIO_REMOTE_WAKEUP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_interrupt_enable(BOARD_GPIO_REMOTE_WAKEUP, gpio_int_edge_falling);
+^
+hw/bsp/brtmm90x/family.c:133:0: information: Skipping configuration 'BOARD_GPIO_REMOTE_WAKEUP' since the value of 'BOARD_GPIO_REMOTE_WAKEUP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (gpio_is_interrupted(BOARD_GPIO_REMOTE_WAKEUP))
+^
+hw/bsp/brtmm90x/family.c:60:0: information: Skipping configuration 'BOARD_GPIO_UART_RX' since the value of 'BOARD_GPIO_UART_RX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_function(BOARD_GPIO_UART_RX, pad_uart0_rxd); /* UART0 RXD */
+^
+hw/bsp/brtmm90x/family.c:57:0: information: Skipping configuration 'BOARD_GPIO_UART_TX' since the value of 'BOARD_GPIO_UART_TX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    gpio_function(BOARD_GPIO_UART_TX, pad_uart0_txd); /* UART0 TXD */
+^
+hw/bsp/brtmm90x/family.c:62:0: information: Skipping configuration 'BOARD_UART' since the value of 'BOARD_UART' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    uart_open(BOARD_UART,                             /* Device */
+^
+hw/bsp/brtmm90x/family.c:113:0: information: Skipping configuration 'BOARD_UART' since the value of 'BOARD_UART' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ uart_disable_interrupt(BOARD_UART, uart_interrupt_tx);
+^
+hw/bsp/brtmm90x/family.c:114:0: information: Skipping configuration 'BOARD_UART' since the value of 'BOARD_UART' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ uart_disable_interrupt(BOARD_UART, uart_interrupt_rx);
+^
+hw/bsp/brtmm90x/family.c:208:0: information: Skipping configuration 'BOARD_UART' since the value of 'BOARD_UART' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (uart_rx_has_data(BOARD_UART))
+^
+hw/bsp/brtmm90x/family.c:210:0: information: Skipping configuration 'BOARD_UART' since the value of 'BOARD_UART' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        r = uart_readn(BOARD_UART, (uint8_t *)buf, len);
+^
+hw/bsp/brtmm90x/family.c:225:0: information: Skipping configuration 'BOARD_UART' since the value of 'BOARD_UART' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    r = uart_writen(BOARD_UART, (uint8_t *)((const void *)buf), len);
+^
+hw/bsp/ch32v307/family.c:155:8: portability: 'buf' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    buf++;
+       ^
+hw/bsp/ch32v307/system_ch32v30x.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 16 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+hw/bsp/ch32v307/system_ch32v30x.c:42:0: information: Skipping configuration 'CH32V30x_D8;SYSCLK_FREQ_120MHz' since the value of 'SYSCLK_FREQ_120MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_120MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/ch32v307/system_ch32v30x.c:31:0: information: Skipping configuration 'CH32V30x_D8;SYSCLK_FREQ_24MHz' since the value of 'SYSCLK_FREQ_24MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_24MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/ch32v307/system_ch32v30x.c:33:0: information: Skipping configuration 'CH32V30x_D8;SYSCLK_FREQ_48MHz' since the value of 'SYSCLK_FREQ_48MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_48MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/ch32v307/system_ch32v30x.c:35:0: information: Skipping configuration 'CH32V30x_D8;SYSCLK_FREQ_56MHz' since the value of 'SYSCLK_FREQ_56MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_56MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/ch32v307/system_ch32v30x.c:37:0: information: Skipping configuration 'CH32V30x_D8;SYSCLK_FREQ_72MHz' since the value of 'SYSCLK_FREQ_72MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_72MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/ch32v307/system_ch32v30x.c:40:0: information: Skipping configuration 'CH32V30x_D8;SYSCLK_FREQ_96MHz' since the value of 'SYSCLK_FREQ_96MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_96MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/ch32v307/system_ch32v30x.c:42:0: information: Skipping configuration 'SYSCLK_FREQ_120MHz' since the value of 'SYSCLK_FREQ_120MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_120MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/ch32v307/system_ch32v30x.c:31:0: information: Skipping configuration 'SYSCLK_FREQ_24MHz' since the value of 'SYSCLK_FREQ_24MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_24MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/ch32v307/system_ch32v30x.c:33:0: information: Skipping configuration 'SYSCLK_FREQ_48MHz' since the value of 'SYSCLK_FREQ_48MHz' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t SystemCoreClock         = SYSCLK_FREQ_48MHz;        /* System Clock Frequency (Core Clock) */
+^
+hw/bsp/espressif/boards/family.c:66:0: information: Skipping configuration 'NEOPIXEL_PIN' since the value of 'NEOPIXEL_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  rmt_config_t config = RMT_DEFAULT_CONFIG_TX(NEOPIXEL_PIN, RMT_CHANNEL_0);
+^
+hw/bsp/espressif/boards/family.c:66:0: information: Skipping configuration 'NEOPIXEL_PIN;NEOPIXEL_POWER_PIN' since the value of 'NEOPIXEL_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  rmt_config_t config = RMT_DEFAULT_CONFIG_TX(NEOPIXEL_PIN, RMT_CHANNEL_0);
+^
+hw/bsp/espressif/boards/family.c:60:0: information: Skipping configuration 'NEOPIXEL_PIN;NEOPIXEL_POWER_PIN' since the value of 'NEOPIXEL_POWER_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_reset_pin(NEOPIXEL_POWER_PIN);
+^
+hw/bsp/espressif/boards/family.c:61:0: information: Skipping configuration 'NEOPIXEL_PIN;NEOPIXEL_POWER_PIN' since the value of 'NEOPIXEL_POWER_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_set_direction(NEOPIXEL_POWER_PIN, GPIO_MODE_OUTPUT);
+^
+hw/bsp/espressif/boards/family.c:62:0: information: Skipping configuration 'NEOPIXEL_PIN;NEOPIXEL_POWER_PIN' since the value of 'NEOPIXEL_POWER_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_set_level(NEOPIXEL_POWER_PIN, NEOPIXEL_POWER_STATE);
+^
+hw/bsp/espressif/components/led_strip/src/led_strip_rmt_ws2812.c:98:19: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    esp_err_t ret = ESP_OK;
+                  ^
+hw/bsp/espressif/components/led_strip/src/led_strip_rmt_ws2812.c:113:19: style: Variable 'ret' is assigned a value that is never used. [unreadVariable]
+    esp_err_t ret = ESP_OK;
+                  ^
+hw/bsp/f1c100s/f1c100s.c:73:8: portability: 'buf' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    buf++;
+       ^
+hw/bsp/gd32vf103/family.c:162:8: portability: 'buf' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    buf++;
+       ^
+hw/bsp/gd32vf103/system_gd32vf103.c:133:22: style: The scope of the variable 'predv0sel' can be reduced. [variableScope]
+    uint32_t pllsel, predv0sel, pllmf, ck_src;
+                     ^
+hw/bsp/gd32vf103/system_gd32vf103.c:134:14: style: The scope of the variable 'predv0' can be reduced. [variableScope]
+    uint32_t predv0, predv1, pll1mf;
+             ^
+hw/bsp/gd32vf103/system_gd32vf103.c:134:22: style: The scope of the variable 'predv1' can be reduced. [variableScope]
+    uint32_t predv0, predv1, pll1mf;
+                     ^
+hw/bsp/gd32vf103/system_gd32vf103.c:134:30: style: The scope of the variable 'pll1mf' can be reduced. [variableScope]
+    uint32_t predv0, predv1, pll1mf;
+                             ^
+hw/bsp/imxrt/family.c:158:0: information: Skipping configuration 'USBPHY1' since the value of 'USBPHY1' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  init_usb_phy(USBPHY1);
+^
+hw/bsp/imxrt/family.c:167:0: information: Skipping configuration 'USBPHY2' since the value of 'USBPHY2' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  init_usb_phy(USBPHY2);
+^
+hw/bsp/kinetis_k32l2/boards/kuiic/kuiic.c:109:0: information: Skipping configuration 'BUTTON_PIN' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  GPIO_PinInit(BUTTON_GPIO, BUTTON_PIN, &button_config);
+^
+hw/bsp/kinetis_k32l2/boards/kuiic/kuiic.c:117:0: information: Skipping configuration 'BUTTON_PIN' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  PORT_SetPinConfig(BUTTON_PORT, BUTTON_PIN, &BUTTON_CFG);
+^
+hw/bsp/kinetis_k32l2/boards/kuiic/kuiic.c:174:0: information: Skipping configuration 'BUTTON_PIN' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return BUTTON_STATE_ACTIVE == GPIO_PinRead(BUTTON_GPIO, BUTTON_PIN);
+^
+hw/bsp/kinetis_kl/family.c:76:0: information: Skipping configuration 'BUTTON_PIN;BUTTON_PORT' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  PORT_SetPinConfig(BUTTON_PIN_PORT, BUTTON_PIN, &button_port);
+^
+hw/bsp/kinetis_kl/family.c:78:0: information: Skipping configuration 'BUTTON_PIN;BUTTON_PORT' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  GPIO_PinInit(BUTTON_PORT, BUTTON_PIN, &button_config);
+^
+hw/bsp/kinetis_kl/family.c:115:0: information: Skipping configuration 'BUTTON_PIN;BUTTON_PORT' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return BUTTON_STATE_ACTIVE == GPIO_PinRead(BUTTON_PORT, BUTTON_PIN);
+^
+hw/bsp/kinetis_kl/family.c:78:0: information: Skipping configuration 'BUTTON_PIN;BUTTON_PORT' since the value of 'BUTTON_PORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  GPIO_PinInit(BUTTON_PORT, BUTTON_PIN, &button_config);
+^
+hw/bsp/kinetis_kl/family.c:115:0: information: Skipping configuration 'BUTTON_PIN;BUTTON_PORT' since the value of 'BUTTON_PORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return BUTTON_STATE_ACTIVE == GPIO_PinRead(BUTTON_PORT, BUTTON_PIN);
+^
+hw/bsp/lpc17/boards/lpcxpresso1769/lpcxpresso1769.c:159:0: information: Skipping configuration 'CFG_TUD_ENABLED' since the value of 'CFG_TUD_ENABLED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t const clk_en = CFG_TUD_ENABLED ? USBCLK_DEVCIE : USBCLK_HOST;
+^
+hw/bsp/lpc17/boards/mbed1768/mbed1768.c:133:0: information: Skipping configuration 'CFG_TUD_ENABLED' since the value of 'CFG_TUD_ENABLED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uint32_t const clk_en = CFG_TUD_ENABLED ? USBCLK_DEVCIE : USBCLK_HOST;
+^
+hw/bsp/lpc54/family.c:159:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  USART_Init(UART_DEV, &uart_config, 12000000);
+^
+hw/bsp/lpc54/family.c:222:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  USART_WriteBlocking(UART_DEV, (uint8_t const *) buf, len);
+^
+hw/bsp/lpc55/family.c:149:0: information: Skipping configuration 'NEOPIXEL_PIN' since the value of 'NEOPIXEL_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  IOCON_PinMuxSet(IOCON, NEOPIXEL_PORT, NEOPIXEL_PIN, IOCON_PIO_DIG_FUNC4_EN);
+^
+hw/bsp/lpc55/family.c:175:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  USART_Init(UART_DEV, &uart_config, 12000000);
+^
+hw/bsp/lpc55/family.c:283:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  USART_WriteBlocking(UART_DEV, (uint8_t const *) buf, len);
+^
+hw/bsp/mcx/family.c:104:0: information: Skipping configuration 'BUTTON_GPIO' since the value of 'BUTTON_GPIO' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  GPIO_PinInit(BUTTON_GPIO, BUTTON_PIN, &button_config);
+^
+hw/bsp/mcx/family.c:213:0: information: Skipping configuration 'BUTTON_GPIO' since the value of 'BUTTON_GPIO' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return BUTTON_STATE_ACTIVE == GPIO_PinRead(BUTTON_GPIO, BUTTON_PIN);
+^
+hw/bsp/mcx/family.c:91:0: information: Skipping configuration 'NEOPIXEL_PIN' since the value of 'NEOPIXEL_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  IOCON_PinMuxSet(IOCON, NEOPIXEL_PORT, NEOPIXEL_PIN, IOCON_PIO_DIG_FUNC4_EN);
+^
+hw/bsp/mcx/family.c:120:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LPUART_Init(UART_DEV, &uart_config, 12000000u);
+^
+hw/bsp/mcx/family.c:226:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LPUART_WriteBlocking(UART_DEV, (uint8_t const *) buf, len);
+^
+hw/bsp/rp2040/family.c:142:0: information: Skipping configuration 'LED_PIN' since the value of 'LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  bi_decl(bi_1pin_with_name(LED_PIN, "LED"));
+^
+hw/bsp/rp2040/family.c:143:0: information: Skipping configuration 'LED_PIN' since the value of 'LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_init(LED_PIN);
+^
+hw/bsp/rp2040/family.c:144:0: information: Skipping configuration 'LED_PIN' since the value of 'LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_set_dir(LED_PIN, GPIO_OUT);
+^
+hw/bsp/rp2040/family.c:179:0: information: Skipping configuration 'LED_PIN' since the value of 'LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_put(LED_PIN, state ? LED_STATE_ON : (1-LED_STATE_ON));
+^
+hw/bsp/rp2040/family.c:153:0: information: Skipping configuration 'LIB_PICO_STDIO_UART;PICO_DEFAULT_UART;PICO_DEFAULT_UART_RX_PIN;PICO_DEFAULT_UART_TX_PIN' since the value of 'PICO_DEFAULT_UART' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uart_inst = uart_get_instance(UART_DEV);
+^
+hw/bsp/rp2040/family.c:154:0: information: Skipping configuration 'LIB_PICO_STDIO_UART;PICO_DEFAULT_UART;PICO_DEFAULT_UART_RX_PIN;PICO_DEFAULT_UART_TX_PIN' since the value of 'PICO_DEFAULT_UART_RX_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  stdio_uart_init_full(uart_inst, CFG_BOARD_UART_BAUDRATE, UART_TX_PIN, UART_RX_PIN);
+^
+hw/bsp/rp2040/family.c:152:0: information: Skipping configuration 'LIB_PICO_STDIO_UART;PICO_DEFAULT_UART;PICO_DEFAULT_UART_RX_PIN;PICO_DEFAULT_UART_TX_PIN' since the value of 'PICO_DEFAULT_UART_TX_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  bi_decl(bi_2pins_with_func(UART_TX_PIN, UART_TX_PIN, GPIO_FUNC_UART));
+^
+hw/bsp/rp2040/family.c:154:0: information: Skipping configuration 'LIB_PICO_STDIO_UART;PICO_DEFAULT_UART;PICO_DEFAULT_UART_RX_PIN;PICO_DEFAULT_UART_TX_PIN' since the value of 'PICO_DEFAULT_UART_TX_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  stdio_uart_init_full(uart_inst, CFG_BOARD_UART_BAUDRATE, UART_TX_PIN, UART_RX_PIN);
+^
+hw/bsp/rp2040/family.c:142:0: information: Skipping configuration 'PICO_DEFAULT_LED_PIN' since the value of 'PICO_DEFAULT_LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  bi_decl(bi_1pin_with_name(LED_PIN, "LED"));
+^
+hw/bsp/rp2040/family.c:143:0: information: Skipping configuration 'PICO_DEFAULT_LED_PIN' since the value of 'PICO_DEFAULT_LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_init(LED_PIN);
+^
+hw/bsp/rp2040/family.c:144:0: information: Skipping configuration 'PICO_DEFAULT_LED_PIN' since the value of 'PICO_DEFAULT_LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_set_dir(LED_PIN, GPIO_OUT);
+^
+hw/bsp/rp2040/family.c:179:0: information: Skipping configuration 'PICO_DEFAULT_LED_PIN' since the value of 'PICO_DEFAULT_LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_put(LED_PIN, state ? LED_STATE_ON : (1-LED_STATE_ON));
+^
+hw/bsp/rp2040/family.c:153:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  uart_inst = uart_get_instance(UART_DEV);
+^
+hw/bsp/samd21/family.c:90:0: information: Skipping configuration 'BUTTON_PIN' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_set_pin_direction(BUTTON_PIN, GPIO_DIRECTION_IN);
+^
+hw/bsp/samd21/family.c:91:0: information: Skipping configuration 'BUTTON_PIN' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_set_pin_pull_mode(BUTTON_PIN, BUTTON_STATE_ACTIVE ? GPIO_PULL_DOWN : GPIO_PULL_UP);
+^
+hw/bsp/samd21/family.c:144:0: information: Skipping configuration 'BUTTON_PIN' since the value of 'BUTTON_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return BUTTON_STATE_ACTIVE == gpio_get_pin_level(BUTTON_PIN);
+^
+hw/bsp/samd21/family.c:84:0: information: Skipping configuration 'LED_PIN' since the value of 'LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_set_pin_direction(LED_PIN, GPIO_DIRECTION_OUT);
+^
+hw/bsp/samd21/family.c:137:0: information: Skipping configuration 'LED_PIN' since the value of 'LED_PIN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  gpio_set_pin_level(LED_PIN, state ? LED_STATE_ON : (1-LED_STATE_ON));
+^
+hw/bsp/samd21/family.c:190:0: information: Skipping configuration 'UART_SERCOM' since the value of 'UART_SERCOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    BOARD_SERCOM(UART_SERCOM)->USART.DATA.reg = text[i];
+^
+hw/bsp/samd21/family.c:191:0: information: Skipping configuration 'UART_SERCOM' since the value of 'UART_SERCOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    while((BOARD_SERCOM(UART_SERCOM)->USART.INTFLAG.reg & SERCOM_USART_INTFLAG_TXC) == 0);
+^
+hw/bsp/samd21/family.c:198:0: information: Skipping configuration 'UART_SERCOM' since the value of 'UART_SERCOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    BOARD_SERCOM(UART_SERCOM)->USART.DATA.reg = *text++;
+^
+hw/bsp/samd21/family.c:199:0: information: Skipping configuration 'UART_SERCOM' since the value of 'UART_SERCOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    while((BOARD_SERCOM(UART_SERCOM)->USART.INTFLAG.reg & SERCOM_USART_INTFLAG_TXC) == 0);
+^
+hw/bsp/samd21/family.c:190:0: information: Skipping configuration 'UART_SERCOM;UART_SERCOM=0' since the value of 'UART_SERCOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    BOARD_SERCOM(UART_SERCOM)->USART.DATA.reg = text[i];
+^
+hw/bsp/samd21/family.c:191:0: information: Skipping configuration 'UART_SERCOM;UART_SERCOM=0' since the value of 'UART_SERCOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    while((BOARD_SERCOM(UART_SERCOM)->USART.INTFLAG.reg & SERCOM_USART_INTFLAG_TXC) == 0);
+^
+hw/bsp/samd21/family.c:198:0: information: Skipping configuration 'UART_SERCOM;UART_SERCOM=0' since the value of 'UART_SERCOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    BOARD_SERCOM(UART_SERCOM)->USART.DATA.reg = *text++;
+^
+hw/bsp/samd21/family.c:199:0: information: Skipping configuration 'UART_SERCOM;UART_SERCOM=0' since the value of 'UART_SERCOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    while((BOARD_SERCOM(UART_SERCOM)->USART.INTFLAG.reg & SERCOM_USART_INTFLAG_TXC) == 0);
+^
+hw/bsp/same5x/boards/d5035_01/d5035_01.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+hw/bsp/sltb009a/sltb009a.c:329:8: style: Condition 'enable' is always true [knownConditionTrueFalse]
+    if(enable && !(CMU->STATUS & CMU_STATUS_USHFRCOENS))
+       ^
+hw/bsp/sltb009a/sltb009a.c:315:8: note: Assuming that condition '!enable' is not redundant
+    if(!enable)
+       ^
+hw/bsp/sltb009a/sltb009a.c:329:8: note: Condition 'enable' is always true
+    if(enable && !(CMU->STATUS & CMU_STATUS_USHFRCOENS))
+       ^
+hw/bsp/sltb009a/sltb009a.c:353:8: style: Condition 'enable' is always true [knownConditionTrueFalse]
+    if(enable && !(CMU->STATUS & CMU_STATUS_AUXHFRCOENS))
+       ^
+hw/bsp/sltb009a/sltb009a.c:339:8: note: Assuming that condition '!enable' is not redundant
+    if(!enable)
+       ^
+hw/bsp/sltb009a/sltb009a.c:353:8: note: Condition 'enable' is always true
+    if(enable && !(CMU->STATUS & CMU_STATUS_AUXHFRCOENS))
+       ^
+hw/bsp/stm32f4/family.c:93:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    .Instance        = UART_DEV,
+^
+hw/bsp/stm32f7/family.c:68:0: information: Skipping configuration '__HAL_RCC_GPIOJ_CLK_ENABLE' since the value of '__HAL_RCC_GPIOJ_CLK_ENABLE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  __HAL_RCC_GPIOJ_CLK_ENABLE();
+^
+hw/bsp/stm32g0/family.c:101:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    .Instance        = UART_DEV,
+^
+hw/bsp/stm32g4/family.c:120:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    .Instance        = UART_DEV,
+^
+hw/bsp/stm32h7/family.c:97:0: information: Skipping configuration '__HAL_RCC_GPIOI_CLK_ENABLE' since the value of '__HAL_RCC_GPIOI_CLK_ENABLE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  __HAL_RCC_GPIOI_CLK_ENABLE(); // USB ULPI NXT
+^
+hw/bsp/stm32l0/family.c:96:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  UartHandle.Instance        = UART_DEV;
+^
+hw/bsp/stm32wb/family.c:113:0: information: Skipping configuration 'UART_DEV' since the value of 'UART_DEV' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    .Instance        = UART_DEV,
+^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:289:26: style: The scope of the variable 'irq' can be reduced. [variableScope]
+    struct hal_gpio_irq *irq;
+                         ^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:290:14: style: The scope of the variable 'stat' can be reduced. [variableScope]
+    uint32_t stat;
+             ^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:314:9: style: The scope of the variable 'sr' can be reduced. [variableScope]
+    int sr;
+        ^
+hw/mcu/sony/cxd56/mkspk/clefia.c:332:17: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+  unsigned char tmp;
+                ^
+hw/mcu/sony/cxd56/mkspk/mkspk.c:175:7: error: Resource leak: fp [resourceLeak]
+      return NULL;
+      ^
+hw/mcu/sony/cxd56/mkspk/mkspk.c:185:7: error: Resource leak: fp [resourceLeak]
+      return NULL;
+      ^
+hw/mcu/sony/cxd56/mkspk/mkspk.c:185:7: error: Memory leak: ef [memleak]
+      return NULL;
+      ^
+hw/mcu/sony/cxd56/mkspk/mkspk.c:192:7: error: Memory leak: buf [memleak]
+      return NULL;
+      ^
+hw/mcu/sony/cxd56/mkspk/mkspk.c:192:7: error: Memory leak: ef [memleak]
+      return NULL;
+      ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 66 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:635:5: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+    BufferSize   -= NumBytesRem;
+    ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:727:5: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+    BufferSize   -= NumBytesRem;
+    ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:941:25: style: The scope of the variable 'Rem' can be reduced. [variableScope]
+  unsigned              Rem;
+                        ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1270:25: style: The scope of the variable 'pDst' can be reduced. [variableScope]
+  volatile char*        pDst;
+                        ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1320:25: style: The scope of the variable 'pDst' can be reduced. [variableScope]
+  volatile char*        pDst;
+                        ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1379:25: style: The scope of the variable 'pDst' can be reduced. [variableScope]
+  volatile char*        pDst;
+                        ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1674:34: style: The scope of the variable 'pUp' can be reduced. [variableScope]
+  volatile SEGGER_RTT_BUFFER_UP* pUp;
+                                 ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1726:36: style: The scope of the variable 'pDown' can be reduced. [variableScope]
+  volatile SEGGER_RTT_BUFFER_DOWN* pDown;
+                                   ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1769:34: style: The scope of the variable 'pUp' can be reduced. [variableScope]
+  volatile SEGGER_RTT_BUFFER_UP* pUp;
+                                 ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1804:36: style: The scope of the variable 'pDown' can be reduced. [variableScope]
+  volatile SEGGER_RTT_BUFFER_DOWN* pDown;
+                                   ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1840:34: style: The scope of the variable 'pUp' can be reduced. [variableScope]
+  volatile SEGGER_RTT_BUFFER_UP* pUp;
+                                 ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1876:36: style: The scope of the variable 'pDown' can be reduced. [variableScope]
+  volatile SEGGER_RTT_BUFFER_DOWN* pDown;
+                                   ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1924:25: style: The scope of the variable 'pRing' can be reduced. [variableScope]
+  SEGGER_RTT_BUFFER_UP* pRing;
+                        ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1925:12: style: The scope of the variable 'Avail' can be reduced. [variableScope]
+  unsigned Avail;
+           ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1973:25: style: The scope of the variable 'FragLen' can be reduced. [variableScope]
+  unsigned              FragLen;
+                        ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1974:25: style: The scope of the variable 'Avail' can be reduced. [variableScope]
+  unsigned              Avail;
+                        ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1975:25: style: The scope of the variable 'pRing' can be reduced. [variableScope]
+  SEGGER_RTT_BUFFER_UP* pRing;
+                        ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:635:18: style: Variable 'BufferSize' is assigned a value that is never used. [unreadVariable]
+    BufferSize   -= NumBytesRem;
+                 ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:727:18: style: Variable 'BufferSize' is assigned a value that is never used. [unreadVariable]
+    BufferSize   -= NumBytesRem;
+                 ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:404:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SEGGER_RTT_MEMCPY((void*)pDst, pBuffer, NumBytesToWrite);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:458:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SEGGER_RTT_MEMCPY((void*)pDst, pData, NumBytes);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:482:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SEGGER_RTT_MEMCPY((void*)pDst, pData, NumBytesAtOnce);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:485:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SEGGER_RTT_MEMCPY((void*)pDst, pData + Rem, NumBytesAtOnce);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:604:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SEGGER_RTT_MEMCPY(pBuffer, (void*)pSrc, NumBytesRem);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:632:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SEGGER_RTT_MEMCPY(pBuffer, (void*)pSrc, NumBytesRem);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:696:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SEGGER_RTT_MEMCPY(pBuffer, (void*)pSrc, NumBytesRem);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:724:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SEGGER_RTT_MEMCPY(pBuffer, (void*)pSrc, NumBytesRem);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:878:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      SEGGER_RTT_MEMCPY((void*)pDst, pData, NumBytes);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:896:0: information: Skipping configuration 'MEMCPY' since the value of 'MEMCPY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      SEGGER_RTT_MEMCPY((void*)pDst, pData, Avail);
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:281:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__CC_ARM' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_CB_SECTION(SEGGER_RTT_CB_ALIGN(SEGGER_RTT_CB _SEGGER_RTT));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:282:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__CC_ARM' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acUpBuffer  [BUFFER_SIZE_UP]));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:283:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__CC_ARM' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acDownBuffer[BUFFER_SIZE_DOWN]));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:281:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__GNUC__;__clang__' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_CB_SECTION(SEGGER_RTT_CB_ALIGN(SEGGER_RTT_CB _SEGGER_RTT));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:282:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__GNUC__;__clang__' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acUpBuffer  [BUFFER_SIZE_UP]));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:283:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__GNUC__;__clang__' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acDownBuffer[BUFFER_SIZE_DOWN]));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:281:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__ICCARM__;__ICCRX__' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_CB_SECTION(SEGGER_RTT_CB_ALIGN(SEGGER_RTT_CB _SEGGER_RTT));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:282:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__ICCARM__;__ICCRX__' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acUpBuffer  [BUFFER_SIZE_UP]));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:283:0: information: Skipping configuration 'SEGGER_RTT_SECTION;__ICCARM__;__ICCRX__' since the value of 'SEGGER_RTT_SECTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  SEGGER_RTT_PUT_BUFFER_SECTION(SEGGER_RTT_BUFFER_ALIGN(static char _acDownBuffer[BUFFER_SIZE_DOWN]));
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT_printf.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 50 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT_printf.c:134:12: style: The scope of the variable 'Div' can be reduced. [variableScope]
+  unsigned Div;
+           ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT_printf.c:138:8: style: The scope of the variable 'c' can be reduced. [variableScope]
+  char c;
+       ^
+lib/SEGGER_RTT/RTT/SEGGER_RTT_printf.c:318:8: style: The scope of the variable 'c' can be reduced. [variableScope]
+  char c;
+       ^
+lib/fatfs/source/diskio.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 19 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+lib/fatfs/source/diskio.c:32:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = RAM_disk_status();
+         ^
+lib/fatfs/source/diskio.c:39:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = MMC_disk_status();
+         ^
+lib/fatfs/source/diskio.c:46:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = USB_disk_status();
+         ^
+lib/fatfs/source/diskio.c:27:10: style: Variable 'stat' is not assigned a value. [unassignedVariable]
+ DSTATUS stat;
+         ^
+lib/fatfs/source/diskio.c:70:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = RAM_disk_initialize();
+         ^
+lib/fatfs/source/diskio.c:77:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = MMC_disk_initialize();
+         ^
+lib/fatfs/source/diskio.c:84:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = USB_disk_initialize();
+         ^
+lib/fatfs/source/diskio.c:65:10: style: Variable 'stat' is not assigned a value. [unassignedVariable]
+ DSTATUS stat;
+         ^
+lib/fatfs/source/diskio.c:113:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = RAM_disk_read(buff, sector, count);
+         ^
+lib/fatfs/source/diskio.c:122:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = MMC_disk_read(buff, sector, count);
+         ^
+lib/fatfs/source/diskio.c:131:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = USB_disk_read(buff, sector, count);
+         ^
+lib/fatfs/source/diskio.c:163:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = RAM_disk_write(buff, sector, count);
+         ^
+lib/fatfs/source/diskio.c:172:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = MMC_disk_write(buff, sector, count);
+         ^
+lib/fatfs/source/diskio.c:181:10: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+  result = USB_disk_write(buff, sector, count);
+         ^
+lib/fatfs/source/diskio.c:205:6: style: Unused variable: result [unusedVariable]
+ int result;
+     ^
+lib/fatfs/source/ff.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 79 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+lib/fatfs/source/ff.c:3845:11: style: The if condition is the same as the previous if condition [duplicateCondition]
+  if (res == FR_OK) {
+          ^
+lib/fatfs/source/ff.c:3824:11: note: First condition
+  if (res == FR_OK) {
+          ^
+lib/fatfs/source/ff.c:3845:11: note: Second condition
+  if (res == FR_OK) {
+          ^
+lib/fatfs/source/ff.c:5120:13: style: Condition 'res==FR_OK' is always true [knownConditionTrueFalse]
+    if (res == FR_OK) {
+            ^
+lib/fatfs/source/ff.c:5102:12: note: Assuming that condition 'res==FR_OK' is not redundant
+   if (res == FR_OK) {
+           ^
+lib/fatfs/source/ff.c:5120:13: note: Condition 'res==FR_OK' is always true
+    if (res == FR_OK) {
+            ^
+lib/fatfs/source/ff.c:783:7: style: The scope of the variable 'b' can be reduced. [variableScope]
+ BYTE b;
+      ^
+lib/fatfs/source/ff.c:1702:8: style: The scope of the variable 'csz' can be reduced. [variableScope]
+ DWORD csz, clst;
+       ^
+lib/fatfs/source/ff.c:1891:12: style: The scope of the variable 'uc' can be reduced. [variableScope]
+ WCHAR wc, uc;
+           ^
+lib/fatfs/source/ff.c:1927:12: style: The scope of the variable 'uc' can be reduced. [variableScope]
+ WCHAR wc, uc;
+           ^
+lib/fatfs/source/ff.c:2003:14: style: The scope of the variable 'c' can be reduced. [variableScope]
+ BYTE ns[8], c;
+             ^
+lib/fatfs/source/ff.c:2005:8: style: The scope of the variable 'wc' can be reduced. [variableScope]
+ WCHAR wc;
+       ^
+lib/fatfs/source/ff.c:2006:8: style: The scope of the variable 'sreg' can be reduced. [variableScope]
+ DWORD sreg;
+       ^
+lib/fatfs/source/ff.c:1435:14: style: Variable 'res' is assigned a value that is never used. [unreadVariable]
+ FRESULT res = FR_OK;
+             ^
+lib/fatfs/source/ffsystem.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 19 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+lib/fatfs/source/ffunicode.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 20 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+lib/fatfs/source/ffunicode.c:15469:7: style: The scope of the variable 'uc' can be reduced. [variableScope]
+ WORD uc, bc, nc, cmd;
+      ^
+lib/fatfs/source/ffunicode.c:15469:11: style: The scope of the variable 'bc' can be reduced. [variableScope]
+ WORD uc, bc, nc, cmd;
+          ^
+lib/fatfs/source/ffunicode.c:15469:15: style: The scope of the variable 'nc' can be reduced. [variableScope]
+ WORD uc, bc, nc, cmd;
+              ^
+lib/fatfs/source/ffunicode.c:15469:19: style: The scope of the variable 'cmd' can be reduced. [variableScope]
+ WORD uc, bc, nc, cmd;
+                  ^
+lib/networking/dhserver.c:332:40: style:inconclusive: Function 'dhserv_init' argument 1 names different: declaration 'config' definition 'c'. [funcArgNamesDifferent]
+err_t dhserv_init(const dhcp_config_t *c)
+                                       ^
+lib/networking/dhserver.h:59:40: note: Function 'dhserv_init' argument 1 names different: declaration 'config' definition 'c'.
+err_t dhserv_init(const dhcp_config_t *config);
+                                       ^
+lib/networking/dhserver.c:332:40: note: Function 'dhserv_init' argument 1 names different: declaration 'config' definition 'c'.
+err_t dhserv_init(const dhcp_config_t *c)
+                                       ^
+lib/networking/dnserver.c:41:10: style: struct member 'dns_header_flags_t::rd' is never used. [unusedStructMember]
+ uint8_t rd: 1,     /* Recursion Desired */
+         ^
+lib/networking/dnserver.c:42:10: style: struct member 'dns_header_flags_t::tc' is never used. [unusedStructMember]
+         tc: 1,     /* Truncation Flag */
+         ^
+lib/networking/dnserver.c:43:10: style: struct member 'dns_header_flags_t::aa' is never used. [unusedStructMember]
+         aa: 1,     /* Authoritative Answer Flag */
+         ^
+lib/networking/dnserver.c:44:10: style: struct member 'dns_header_flags_t::opcode' is never used. [unusedStructMember]
+         opcode: 4, /* Operation code */
+         ^
+lib/networking/dnserver.c:46:10: style: struct member 'dns_header_flags_t::rcode' is never used. [unusedStructMember]
+ uint8_t rcode: 4,  /* Response Code */
+         ^
+lib/networking/dnserver.c:47:10: style: struct member 'dns_header_flags_t::z' is never used. [unusedStructMember]
+         z: 3,      /* Zero */
+         ^
+lib/networking/dnserver.c:48:10: style: struct member 'dns_header_flags_t::ra' is never used. [unusedStructMember]
+         ra: 1;     /* Recursion Available */
+         ^
+lib/networking/rndis_reports.c:106:17: warning: Possible null pointer dereference: data [nullPointer]
+  memcpy(c + 1, data, size);
+                ^
+lib/networking/rndis_reports.c:151:82: note: Calling function 'rndis_query_cmplt', 2nd argument 'NULL' value is 0
+    default:                             rndis_query_cmplt(RNDIS_STATUS_FAILURE, NULL, 0); return;
+                                                                                 ^
+lib/networking/rndis_reports.c:106:17: note: Null pointer dereference
+  memcpy(c + 1, data, size);
+                ^
+src/class/audio/audio_device.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 32 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/common/tusb_fifo.c:693:40: style:inconclusive: Function 'tu_fifo_read' argument 2 names different: declaration 'p_buffer' definition 'buffer'. [funcArgNamesDifferent]
+bool tu_fifo_read(tu_fifo_t* f, void * buffer)
+                                       ^
+src/common/tusb_fifo.h:170:63: note: Function 'tu_fifo_read' argument 2 names different: declaration 'p_buffer' definition 'buffer'.
+bool     tu_fifo_read                   (tu_fifo_t* f, void * p_buffer);
+                                                              ^
+src/common/tusb_fifo.c:693:40: note: Function 'tu_fifo_read' argument 2 names different: declaration 'p_buffer' definition 'buffer'.
+bool tu_fifo_read(tu_fifo_t* f, void * buffer)
+                                       ^
+src/common/tusb_fifo.c:724:46: style:inconclusive: Function 'tu_fifo_read_n' argument 2 names different: declaration 'p_buffer' definition 'buffer'. [funcArgNamesDifferent]
+uint16_t tu_fifo_read_n(tu_fifo_t* f, void * buffer, uint16_t n)
+                                             ^
+src/common/tusb_fifo.h:171:63: note: Function 'tu_fifo_read_n' argument 2 names different: declaration 'p_buffer' definition 'buffer'.
+uint16_t tu_fifo_read_n                 (tu_fifo_t* f, void * p_buffer, uint16_t n);
+                                                              ^
+src/common/tusb_fifo.c:724:46: note: Function 'tu_fifo_read_n' argument 2 names different: declaration 'p_buffer' definition 'buffer'.
+uint16_t tu_fifo_read_n(tu_fifo_t* f, void * buffer, uint16_t n)
+                                             ^
+src/common/tusb_fifo.c:794:47: style:inconclusive: Function 'tu_fifo_write' argument 2 names different: declaration 'p_data' definition 'data'. [funcArgNamesDifferent]
+bool tu_fifo_write(tu_fifo_t* f, const void * data)
+                                              ^
+src/common/tusb_fifo.h:166:69: note: Function 'tu_fifo_write' argument 2 names different: declaration 'p_data' definition 'data'.
+bool     tu_fifo_write                  (tu_fifo_t* f, void const * p_data);
+                                                                    ^
+src/common/tusb_fifo.c:794:47: note: Function 'tu_fifo_write' argument 2 names different: declaration 'p_data' definition 'data'.
+bool tu_fifo_write(tu_fifo_t* f, const void * data)
+                                              ^
+src/common/tusb_fifo.c:836:53: style:inconclusive: Function 'tu_fifo_write_n' argument 2 names different: declaration 'p_data' definition 'data'. [funcArgNamesDifferent]
+uint16_t tu_fifo_write_n(tu_fifo_t* f, const void * data, uint16_t n)
+                                                    ^
+src/common/tusb_fifo.h:167:69: note: Function 'tu_fifo_write_n' argument 2 names different: declaration 'p_data' definition 'data'.
+uint16_t tu_fifo_write_n                (tu_fifo_t* f, void const * p_data, uint16_t n);
+                                                                    ^
+src/common/tusb_fifo.c:836:53: note: Function 'tu_fifo_write_n' argument 2 names different: declaration 'p_data' definition 'data'.
+uint16_t tu_fifo_write_n(tu_fifo_t* f, const void * data, uint16_t n)
+                                                    ^
+src/common/tusb_fifo.c:425:9: style: Variable 'cnt' is assigned a value that is never used. [unreadVariable]
+    cnt = f->depth;
+        ^
+src/device/usbd.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/device/usbd.c:445:21: error: syntax error [syntaxError]
+    TU_ASSERT(driver, );
+                    ^
+src/device/usbd_control.c:169:75: style:inconclusive: Function 'usbd_control_xfer_cb' argument 3 names different: declaration 'event' definition 'result'. [funcArgNamesDifferent]
+bool usbd_control_xfer_cb (uint8_t rhport, uint8_t ep_addr, xfer_result_t result, uint32_t xferred_bytes)
+                                                                          ^
+src/device/usbd_control.c:144:75: note: Function 'usbd_control_xfer_cb' argument 3 names different: declaration 'event' definition 'result'.
+bool usbd_control_xfer_cb (uint8_t rhport, uint8_t ep_addr, xfer_result_t event, uint32_t xferred_bytes);
+                                                                          ^
+src/device/usbd_control.c:169:75: note: Function 'usbd_control_xfer_cb' argument 3 names different: declaration 'event' definition 'result'.
+bool usbd_control_xfer_cb (uint8_t rhport, uint8_t ep_addr, xfer_result_t result, uint32_t xferred_bytes)
+                                                                          ^
+src/host/usbh.c:456:31: error: syntax error [syntaxError]
+          TU_ASSERT(epnum == 0, );
+                              ^
+src/host/usbh.c:210:0: information: Skipping configuration 'CFG_TUH_ENABLED;CFG_TUH_HUB' since the value of 'CFG_TUH_HUB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+static usbh_device_t _usbh_devices[TOTAL_DEVICES];
+^
+src/host/usbh.c:248:0: information: Skipping configuration 'CFG_TUH_ENABLED;CFG_TUH_HUB' since the value of 'CFG_TUH_HUB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  TU_VERIFY(dev_addr > 0 && dev_addr <= TOTAL_DEVICES, NULL);
+^
+src/host/usbh.c:347:0: information: Skipping configuration 'CFG_TUH_ENABLED;CFG_TUH_HUB' since the value of 'CFG_TUH_HUB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  for(uint8_t i=0; i<TOTAL_DEVICES; i++)
+^
+src/host/usbh.c:1138:0: information: Skipping configuration 'CFG_TUH_ENABLED;CFG_TUH_HUB' since the value of 'CFG_TUH_HUB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return (CFG_TUH_HUB > 0) && (daddr > CFG_TUH_DEVICE_MAX);
+^
+src/host/usbh.c:1178:0: information: Skipping configuration 'CFG_TUH_ENABLED;CFG_TUH_HUB' since the value of 'CFG_TUH_HUB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  for (uint8_t dev_id = 0; dev_id < TOTAL_DEVICES; dev_id++) {
+^
+src/host/usbh.c:1512:0: information: Skipping configuration 'CFG_TUH_ENABLED;CFG_TUH_HUB' since the value of 'CFG_TUH_HUB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    end   = start + CFG_TUH_HUB;
+^
+src/portable/raspberrypi/rp2040/rp2040_usb.c:134:23: style: Variable '*ep->buffer_control' is reassigned a value before the old one has been used. [redundantAssignment]
+  *ep->buffer_control = value;
+                      ^
+src/portable/raspberrypi/rp2040/rp2040_usb.c:117:27: note: *ep->buffer_control is assigned
+      *ep->buffer_control = value & ~USB_BUF_CTRL_AVAIL;
+                          ^
+src/portable/raspberrypi/rp2040/rp2040_usb.c:134:23: note: *ep->buffer_control is overwritten
+  *ep->buffer_control = value;
+                      ^
+src/tusb.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 65 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+test/unit-test/test/test_fifo.c:150:11: style: Local variable 'rd_buf' shadows outer variable [shadowVariable]
+  uint8_t rd_buf[FIFO_SIZE] = { 0 };
+          ^
+test/unit-test/test/test_fifo.c:41:9: note: Shadowed declaration
+uint8_t rd_buf[FIFO_SIZE];
+        ^
+test/unit-test/test/test_fifo.c:150:11: note: Shadow variable
+  uint8_t rd_buf[FIFO_SIZE] = { 0 };
+          ^
+test/unit-test/test/test_fifo.c:202:9: style: Variable 'total' is assigned a value that is never used. [unreadVariable]
+  total = help_write(total, 192);
+        ^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:76:24: style: The scope of the variable 'index' can be reduced. [variableScope]
+  CMOCK_MEM_INDEX_TYPE index;
+                       ^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:78:9: style: The scope of the variable 'obj' can be reduced. [variableScope]
+  void* obj;
+        ^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:79:9: style: The scope of the variable 'next' can be reduced. [variableScope]
+  void* next;
+        ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 42 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:277:9: style: The scope of the variable 'nibble' can be reduced. [variableScope]
+    int nibble;
+        ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1350:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+    UNITY_UINT32 i;
+                 ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1390:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+    UNITY_UINT32 i;
+                 ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1514:18: style: The scope of the variable 'bytes' can be reduced. [variableScope]
+    UNITY_UINT32 bytes;
+                 ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1758:28: style:inconclusive: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void UnityFail(const char* msg, const UNITY_LINE_TYPE line)
+                           ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:635:43: note: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'.
+UNITY_NORETURN void UnityFail(const char* message, const UNITY_LINE_TYPE line);
+                                          ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1758:28: note: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityFail(const char* msg, const UNITY_LINE_TYPE line)
+                           ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1795:30: style:inconclusive: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void UnityIgnore(const char* msg, const UNITY_LINE_TYPE line)
+                             ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:636:45: note: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'.
+UNITY_NORETURN void UnityIgnore(const char* message, const UNITY_LINE_TYPE line);
+                                            ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1795:30: note: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityIgnore(const char* msg, const UNITY_LINE_TYPE line)
+                             ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1811:31: style:inconclusive: Function 'UnityMessage' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void UnityMessage(const char* msg, const UNITY_LINE_TYPE line)
+                              ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:642:31: note: Function 'UnityMessage' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityMessage(const char* message, const UNITY_LINE_TYPE line);
+                              ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1811:31: note: Function 'UnityMessage' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityMessage(const char* msg, const UNITY_LINE_TYPE line)
+                              ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1431:20: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    UNITY_UINT32 i = 0;
+                   ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1833:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_START' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_START();
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1843:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_STOP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_STOP();
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:559:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_PRINT_EXEC_TIME' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_PRINT_EXEC_TIME();
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:485:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStartTime;
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:486:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStopTime;
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1758:28: style:inconclusive: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void UnityFail(const char* msg, const UNITY_LINE_TYPE line)
+                           ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:638:28: note: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityFail(const char* message, const UNITY_LINE_TYPE line);
+                           ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1758:28: note: Function 'UnityFail' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityFail(const char* msg, const UNITY_LINE_TYPE line)
+                           ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1795:30: style:inconclusive: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'. [funcArgNamesDifferent]
+void UnityIgnore(const char* msg, const UNITY_LINE_TYPE line)
+                             ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:639:30: note: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityIgnore(const char* message, const UNITY_LINE_TYPE line);
+                             ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1795:30: note: Function 'UnityIgnore' argument 1 names different: declaration 'message' definition 'msg'.
+void UnityIgnore(const char* msg, const UNITY_LINE_TYPE line)
+                             ^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1833:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_START' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_START();
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1843:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_STOP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_STOP();
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:559:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_PRINT_EXEC_TIME' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_PRINT_EXEC_TIME();
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:485:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStartTime;
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity_internals.h:486:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStopTime;
+^
+lib/networking/rndis_reports.c:106:17: error: Null pointer dereference: data [ctunullpointer]
+  memcpy(c + 1, data, size);
+                ^
+lib/networking/rndis_reports.c:151:59: note: Calling function rndis_query_cmplt, 2nd argument is null
+    default:                             rndis_query_cmplt(RNDIS_STATUS_FAILURE, NULL, 0); return;
+                                                          ^
+lib/networking/rndis_reports.c:106:17: note: Dereferencing argument data that is null
+  memcpy(c + 1, data, size);
+                ^
+hw/bsp/mcx/boards/mcxn947brk/clock_config.c:89:0: style: The function 'BOARD_BootClockFRO12M' is never used. [unusedFunction]
+
+^
+hw/bsp/mcx/boards/mcxn947brk/clock_config.c:186:0: style: The function 'BOARD_BootClockFROHF144M' is never used. [unusedFunction]
+
+^
+hw/bsp/mcx/boards/mcxn947brk/clock_config.c:135:0: style: The function 'BOARD_BootClockFROHF48M' is never used. [unusedFunction]
+
+^
+hw/bsp/mcx/boards/mcxn947brk/clock_config.c:311:0: style: The function 'BOARD_BootClockPLL100M' is never used. [unusedFunction]
+
+^
+hw/bsp/kinetis_kl/boards/frdm_kl25z/clock_config.c:285:0: style: The function 'BOARD_BootClockVLPR' is never used. [unusedFunction]
+
+^
+hw/bsp/mcx/boards/mcxn947brk/pin_mux.c:35:0: style: The function 'BOARD_InitBootPins' is never used. [unusedFunction]
+
+^
+hw/bsp/sltb009a/sltb009a.c:69:0: style: The function 'BusFault_Handler' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:158:0: style: The function 'CMock_Guts_GetAddressFor' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:173:0: style: The function 'CMock_Guts_MemBytesCapacity' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:181:0: style: The function 'CMock_Guts_MemBytesFree' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:189:0: style: The function 'CMock_Guts_MemBytesUsed' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:74:0: style: The function 'CMock_Guts_MemChain' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:140:0: style: The function 'CMock_Guts_MemEndOfChain' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:197:0: style: The function 'CMock_Guts_MemFreeAll' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:205:0: style: The function 'CMock_Guts_MemFreeFinal' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/cmock/src/cmock.c:36:0: style: The function 'CMock_Guts_MemNew' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/system_gd32vf103.c:515:0: style: The function 'Exception_Get_EXC' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/system_gd32vf103.c:498:0: style: The function 'Exception_Register_EXC' is never used. [unusedFunction]
+
+^
+hw/bsp/broadcom_32bit/family.c:146:0: style: The function 'HardFault_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/ch32v30x_it.c:42:0: style: The function 'HardFault_Handler_impl' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/gr_citrus/hwinit.c:15:0: style: The function 'HardwareSetup' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/gr_citrus/gr_citrus.c:245:0: style: The function 'INT_Excep_CMT0_CMI0' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/rx65n_target/rx65n_target.c:146:0: style: The function 'INT_Excep_ICU_GROUPBL0' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/rx65n_target/rx65n_target.c:177:0: style: The function 'INT_Excep_PERIB_INTB185' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/gr_citrus/gr_citrus.c:116:0: style: The function 'INT_Excep_SCI0_RXI0' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/gr_citrus/gr_citrus.c:111:0: style: The function 'INT_Excep_SCI0_TEI0' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/gr_citrus/gr_citrus.c:90:0: style: The function 'INT_Excep_SCI0_TXI0' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/rx65n_target/rx65n_target.c:151:0: style: The function 'INT_Excep_SCI5_RXI5' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/rx65n_target/rx65n_target.c:125:0: style: The function 'INT_Excep_SCI5_TXI5' is never used. [unusedFunction]
+
+^
+hw/bsp/rx/boards/gr_citrus/gr_citrus.c:142:0: style: The function 'INT_Excep_USB0_USBI0' is never used. [unusedFunction]
+
+^
+test/fuzz/device/cdc/src/fuzz.cc:49:0: style: The function 'LLVMFuzzerTestOneInput' is never used. [unusedFunction]
+
+^
+hw/bsp/sltb009a/sltb009a.c:64:0: style: The function 'MemManage_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/ch32v30x_it.c:22:0: style: The function 'NMI_Handle' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/ch32v30x_it.c:26:0: style: The function 'NMI_Handler_impl' is never used. [unusedFunction]
+
+^
+hw/bsp/mm32/boards/mm32f327x_bluepillplus/mm32f327x_bluepillplus.c:37:0: style: The function 'OTG_FS_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/stm32f4/family.c:39:0: style: The function 'OTG_HS_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/nrf/family.c:245:0: style: The function 'SD_EVT_IRQHandler' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1567:0: style: The function 'SEGGER_RTT_AllocDownBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1616:0: style: The function 'SEGGER_RTT_AllocUpBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1723:0: style: The function 'SEGGER_RTT_ConfigDownBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1671:0: style: The function 'SEGGER_RTT_ConfigUpBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:2059:0: style: The function 'SEGGER_RTT_GetAvailWriteSpace' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:2080:0: style: The function 'SEGGER_RTT_GetBytesInBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1517:0: style: The function 'SEGGER_RTT_HasData' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1538:0: style: The function 'SEGGER_RTT_HasDataUp' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1489:0: style: The function 'SEGGER_RTT_HasKey' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1901:0: style: The function 'SEGGER_RTT_Init' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1375:0: style: The function 'SEGGER_RTT_PutChar' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1316:0: style: The function 'SEGGER_RTT_PutCharSkip' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1266:0: style: The function 'SEGGER_RTT_PutCharSkipNoLock' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:763:0: style: The function 'SEGGER_RTT_ReadUpBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1873:0: style: The function 'SEGGER_RTT_SetFlagsDownBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1837:0: style: The function 'SEGGER_RTT_SetFlagsUpBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1801:0: style: The function 'SEGGER_RTT_SetNameDownBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1766:0: style: The function 'SEGGER_RTT_SetNameUpBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1922:0: style: The function 'SEGGER_RTT_SetTerminal' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1971:0: style: The function 'SEGGER_RTT_TerminalOut' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1466:0: style: The function 'SEGGER_RTT_WaitKey' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1177:0: style: The function 'SEGGER_RTT_WriteDownBuffer' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:935:0: style: The function 'SEGGER_RTT_WriteSkipNoLock' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:1236:0: style: The function 'SEGGER_RTT_WriteString' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT.c:834:0: style: The function 'SEGGER_RTT_WriteWithOverwriteNoLock' is never used. [unusedFunction]
+
+^
+lib/SEGGER_RTT/RTT/SEGGER_RTT_printf.c:491:0: style: The function 'SEGGER_RTT_printf' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/family.c:110:0: style: The function 'SysTick_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/family.c:115:0: style: The function 'SysTick_Handler_impl' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/system_ch32v30x.c:85:0: style: The function 'SystemInit' is never used. [unusedFunction]
+
+^
+hw/bsp/msp430/family.c:199:0: style: The function 'TIMER0_A0_ISR' is never used. [unusedFunction]
+
+^
+hw/bsp/broadcom_32bit/family.c:133:0: style: The function 'TIMER_1_IRQHandler' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/c_exception/lib/CException.c:11:0: style: The function 'Throw' is never used. [unusedFunction]
+
+^
+hw/bsp/stm32g4/family.c:52:0: style: The function 'UCPD1_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/samg55xplained/samg55xplained.c:100:0: style: The function 'UDP_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/boards/ch32v307v-r1-1v0/debug_uart.c:39:0: style: The function 'USART1_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/boards/ch32v307v-r1-1v0/debug_uart.c:43:0: style: The function 'USART1_IRQHandler_impl' is never used. [unusedFunction]
+
+^
+hw/bsp/xmc4000/family.c:37:0: style: The function 'USB0_0_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/mcx/family.c:55:0: style: The function 'USB0_FS_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/tm4c123/family.c:8:0: style: The function 'USB0_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/ea4357.c:230:0: style: The function 'USB0_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/mcx/family.c:60:0: style: The function 'USB1_HS_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/ea4357.c:241:0: style: The function 'USB1_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/nrf/family.c:57:0: style: The function 'USBD_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/family.c:37:0: style: The function 'USBFS_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/same70_qmtech/same70_qmtech.c:105:0: style: The function 'USBHS_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/family.c:39:0: style: The function 'USBHS_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/family.c:44:0: style: The function 'USBHS_IRQHandler_impl' is never used. [unusedFunction]
+
+^
+hw/bsp/stm32f1/family.c:44:0: style: The function 'USBWakeUp_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/stm32f3/boards/stm32f303disco/stm32f303disco.c:56:0: style: The function 'USBWakeUp_RMP_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/samd51/family.c:39:0: style: The function 'USB_0_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/samd51/family.c:44:0: style: The function 'USB_1_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/samd51/family.c:49:0: style: The function 'USB_2_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/samd51/family.c:54:0: style: The function 'USB_3_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/stm32f1/family.c:34:0: style: The function 'USB_HP_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/samd11/family.c:42:0: style: The function 'USB_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/broadcom_32bit/family.c:47:0: style: The function 'USB_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/stm32f1/family.c:39:0: style: The function 'USB_LP_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/imxrt/family.c:174:0: style: The function 'USB_OTG1_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/imxrt/family.c:185:0: style: The function 'USB_OTG2_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/msp430/family.c:34:0: style: The function 'USB_UBM_ISR' is never used. [unusedFunction]
+
+^
+hw/bsp/stm32g0/family.c:35:0: style: The function 'USB_UCPD1_2_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/da14695_dk_usb/da14695_dk_usb.c:49:0: style: The function 'UnhandledIRQ' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:686:0: style: The function 'UnityAssertBits' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:905:0: style: The function 'UnityAssertEqualFloatArray' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:775:0: style: The function 'UnityAssertEqualIntArray' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1503:0: style: The function 'UnityAssertEqualMemory' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:707:0: style: The function 'UnityAssertEqualNumber' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1345:0: style: The function 'UnityAssertEqualString' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1424:0: style: The function 'UnityAssertEqualStringArray' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1384:0: style: The function 'UnityAssertEqualStringLen' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:972:0: style: The function 'UnityAssertFloatSpecial' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:953:0: style: The function 'UnityAssertFloatsWithin' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:728:0: style: The function 'UnityAssertGreaterOrLessOrEqualNumber' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1225:0: style: The function 'UnityAssertNumbersArrayWithin' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1178:0: style: The function 'UnityAssertNumbersWithin' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1855:0: style: The function 'UnityBegin' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1827:0: style: The function 'UnityDefaultTestRun' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1871:0: style: The function 'UnityEnd' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1758:0: style: The function 'UnityFail' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1610:0: style: The function 'UnityFloatToPtr' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1795:0: style: The function 'UnityIgnore' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1811:0: style: The function 'UnityMessage' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1584:0: style: The function 'UnityNumToPtr' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/vendor/unity/src/unity.c:1849:0: style: The function 'UnitySetTestFile' is never used. [unusedFunction]
+
+^
+hw/bsp/sltb009a/sltb009a.c:74:0: style: The function 'UsageFault_Handler' is never used. [unusedFunction]
+
+^
+hw/bsp/da1469x_dk_pro/da1469x-dk-pro.c:44:0: style: The function 'VBUS_IRQHandler' is never used. [unusedFunction]
+
+^
+hw/bsp/board.c:93:0: style: The function '__write' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/system_gd32vf103.c:663:0: style: The function '_fini' is never used. [unusedFunction]
+
+^
+hw/bsp/broadcom_32bit/family.c:153:0: style: The function '_init' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/system_gd32vf103.c:635:0: style: The function '_postmain_fini' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/system_gd32vf103.c:618:0: style: The function '_premain_init' is never used. [unusedFunction]
+
+^
+hw/bsp/board.c:93:0: style: The function '_write' is never used. [unusedFunction]
+
+^
+examples/device/board_test/src/main.c:80:0: style: The function 'app_main' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/family.c:170:0: style: The function 'assert_failed' is never used. [unusedFunction]
+
+^
+examples/host/msc_file_explorer/src/msc_app.c:297:0: style: The function 'cli_cmd_unknown' is never used. [unusedFunction]
+
+^
+hw/bsp/ra/family.c:210:0: style: The function 'close' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/system_gd32vf103.c:537:0: style: The function 'core_exception_handler' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/da1469x_clock.c:109:0: style: The function 'da1469x_clock_lp_xtal32k_enable' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/da1469x_clock.c:115:0: style: The function 'da1469x_clock_lp_xtal32k_switch' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/da1469x_clock.c:123:0: style: The function 'da1469x_clock_pll_disable' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/da1469x_clock.c:153:0: style: The function 'da1469x_clock_sys_pll_switch' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:205:0: style: The function 'dcd_disconnect' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:337:0: style: The function 'dcd_edpt_clear_stall' is never used. [unusedFunction]
+
+^
+test/fuzz/dcd_fuzz.cc:153:0: style: The function 'dcd_edpt_close' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:280:0: style: The function 'dcd_edpt_close_all' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:255:0: style: The function 'dcd_edpt_open' is never used. [unusedFunction]
+
+^
+src/portable/template/dcd_template.c:121:0: style: The function 'dcd_edpt_xfer_fifo' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:158:0: style: The function 'dcd_init' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:172:0: style: The function 'dcd_int_disable' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:165:0: style: The function 'dcd_int_enable' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:354:0: style: The function 'dcd_int_handler' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:192:0: style: The function 'dcd_remote_wakeup' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:179:0: style: The function 'dcd_set_address' is never used. [unusedFunction]
+
+^
+src/portable/microchip/samg/dcd_samg.c:213:0: style: The function 'dcd_sof_enable' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/family.c:174:0: style: The function 'eclic_mtip_handler' is never used. [unusedFunction]
+
+^
+lib/fatfs/source/ff.c:4252:0: style: The function 'f_chdrive' is never used. [unusedFunction]
+
+^
+lib/fatfs/source/ff.c:4816:0: style: The function 'f_getfree' is never used. [unusedFunction]
+
+^
+lib/fatfs/source/ff.c:4433:0: style: The function 'f_lseek' is never used. [unusedFunction]
+
+^
+lib/fatfs/source/ff.c:4781:0: style: The function 'f_stat' is never used. [unusedFunction]
+
+^
+lib/fatfs/source/ff.c:4912:0: style: The function 'f_truncate' is never used. [unusedFunction]
+
+^
+hw/bsp/fomu/fomu.c:37:0: style: The function 'fomu_error' is never used. [unusedFunction]
+
+^
+hw/bsp/ra/family.c:215:0: style: The function 'fstat' is never used. [unusedFunction]
+
+^
+hw/bsp/gd32vf103/family.c:119:0: style: The function 'gd32vf103_reset' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_system.c:84:0: style: The function 'hal_debugger_connected' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:249:0: style: The function 'hal_gpio_deinit' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:410:0: style: The function 'hal_gpio_irq_enable' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:357:0: style: The function 'hal_gpio_irq_init' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:394:0: style: The function 'hal_gpio_irq_release' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:277:0: style: The function 'hal_gpio_toggle' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_system.c:129:0: style: The function 'hal_reset_cause' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_system.c:90:0: style: The function 'hal_system_clock_start' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_system.c:35:0: style: The function 'hal_system_init' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_system.c:69:0: style: The function 'hal_system_reset' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_system_start.c:59:0: style: The function 'hal_system_restart' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:454:0: style: The function 'hcd_device_close' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:620:0: style: The function 'hcd_edpt_clear_stall' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:505:0: style: The function 'hcd_edpt_open' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:525:0: style: The function 'hcd_edpt_xfer' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:480:0: style: The function 'hcd_frame_number' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:380:0: style: The function 'hcd_init' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:493:0: style: The function 'hcd_int_disable' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:486:0: style: The function 'hcd_int_enable' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:255:0: style: The function 'hcd_int_handler' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:427:0: style: The function 'hcd_port_connect_status' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:414:0: style: The function 'hcd_port_reset' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:422:0: style: The function 'hcd_port_reset_end' is never used. [unusedFunction]
+
+^
+src/portable/raspberrypi/rp2040/hcd_rp2040.c:579:0: style: The function 'hcd_setup_send' is never used. [unusedFunction]
+
+^
+hw/bsp/same5x/boards/same54_xplained/same54_xplained.c:74:0: style: The function 'init_clock_xtal' is never used. [unusedFunction]
+
+^
+hw/bsp/ra/family.c:228:0: style: The function 'isatty' is never used. [unusedFunction]
+
+^
+hw/bsp/fomu/fomu.c:58:0: style: The function 'isr' is never used. [unusedFunction]
+
+^
+examples/device/usbtmc/src/main.c:106:0: style: The function 'led_indicator_pulse' is never used. [unusedFunction]
+
+^
+hw/bsp/espressif/components/led_strip/src/led_strip_rmt_ws2812.c:137:0: style: The function 'led_strip_new_rmt_ws2812' is never used. [unusedFunction]
+
+^
+hw/bsp/ra/family.c:221:0: style: The function 'lseek' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:440:0: style: The function 'mcu_gpio_enter_sleep' is never used. [unusedFunction]
+
+^
+hw/mcu/dialog/da1469x/src/hal_gpio.c:460:0: style: The function 'mcu_gpio_exit_sleep' is never used. [unusedFunction]
+
+^
+hw/bsp/nrf/family.c:254:0: style: The function 'nrf_error_cb' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/pca9532.c:169:0: style: The function 'pca9532_getLedState' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/pca9532.c:262:0: style: The function 'pca9532_setBlink0Duty' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/pca9532.c:287:0: style: The function 'pca9532_setBlink0Leds' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/pca9532.c:243:0: style: The function 'pca9532_setBlink0Period' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/pca9532.c:322:0: style: The function 'pca9532_setBlink1Duty' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/pca9532.c:348:0: style: The function 'pca9532_setBlink1Leds' is never used. [unusedFunction]
+
+^
+hw/bsp/ea4357/pca9532.c:303:0: style: The function 'pca9532_setBlink1Period' is never used. [unusedFunction]
+
+^
+lib/networking/rndis_reports.c:237:0: style: The function 'rndis_class_set_handler' is never used. [unusedFunction]
+
+^
+examples/device/net_lwip_webserver/src/main.c:252:0: style: The function 'sys_arch_protect' is never used. [unusedFunction]
+
+^
+examples/device/net_lwip_webserver/src/main.c:256:0: style: The function 'sys_arch_unprotect' is never used. [unusedFunction]
+
+^
+examples/device/net_lwip_webserver/src/main.c:262:0: style: The function 'sys_now' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_common_func.c:47:0: style: The function 'test_TU_ARGS_NUM' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:306:0: style: The function 'test_empty' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_foo.c:14:0: style: The function 'test_foo' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_foo.c:25:0: style: The function 'test_foo_again' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_foo.c:34:0: style: The function 'test_foo_mock_with_const' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_foo.c:42:0: style: The function 'test_foo_mock_with_variable_args' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:335:0: style: The function 'test_full' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:225:0: style: The function 'test_get_read_info_when_no_wrap' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:245:0: style: The function 'test_get_read_info_when_wrapped' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:268:0: style: The function 'test_get_write_info_when_no_wrap' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:286:0: style: The function 'test_get_write_info_when_wrapped' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_event_processor.c:133:0: style: The function 'test_givenNewDataIsAvailable_whenTheDisplayHasUpdated_thenTheEventIsComplete' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_event_processor.c:85:0: style: The function 'test_givenTheDisplayHasAnError_whenTheDeviceIsPoweredOn_thenTheDisplayIsPoweredDown' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_event_processor.c:107:0: style: The function 'test_givenTheUserHasTypedSleep_whenItIsTimeToCheckTheKeyboard_theDisplayIsPoweredDown' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:71:0: style: The function 'test_item_size' is never used. [unusedFunction]
+
+^
+test/unit-test/test/device/msc/test_msc_device.c:217:0: style: The function 'test_msc' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:59:0: style: The function 'test_normal' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:205:0: style: The function 'test_peek' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:356:0: style: The function 'test_rd_idx_wrap' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:98:0: style: The function 'test_read_n' is never used. [unusedFunction]
+
+^
+test/unit-test/test/device/usbd/test_usbd.c:209:0: style: The function 'test_usbd_control_in_zlp' is never used. [unusedFunction]
+
+^
+test/unit-test/test/device/usbd/test_usbd.c:175:0: style: The function 'test_usbd_get_configuration_descriptor' is never used. [unusedFunction]
+
+^
+test/unit-test/test/device/usbd/test_usbd.c:194:0: style: The function 'test_usbd_get_configuration_descriptor_null' is never used. [unusedFunction]
+
+^
+test/unit-test/test/device/usbd/test_usbd.c:144:0: style: The function 'test_usbd_get_device_descriptor' is never used. [unusedFunction]
+
+^
+test/unit-test/test/device/usbd/test_usbd.c:161:0: style: The function 'test_usbd_get_device_descriptor_null' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_event_processor.c:17:0: style: The function 'test_whenTheDeviceIsReset_thenTheStatusLedIsTurnedOff' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_event_processor.c:64:0: style: The function 'test_whenTheModeSelectButtonIsPressed_thenTheDisplayModeIsCycled' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_event_processor.c:32:0: style: The function 'test_whenThePowerReadingIsLessThan5_thenTheStatusLedIsNotTurnedOn' is never used. [unusedFunction]
+
+^
+test/unit-test/vendor/ceedling/plugins/fake_function_framework/examples/fff_example/test/test_event_processor.c:47:0: style: The function 'test_whenTheVolumeKnobIsMaxed_thenVolumeDisplayIsSetTo11' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:146:0: style: The function 'test_write_double_overflowed' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:126:0: style: The function 'test_write_n' is never used. [unusedFunction]
+
+^
+test/unit-test/test/test_fifo.c:185:0: style: The function 'test_write_overwritable2' is never used. [unusedFunction]
+
+^
+src/common/tusb_fifo.c:942:0: style: The function 'tu_fifo_advance_read_pointer' is never used. [unusedFunction]
+
+^
+src/common/tusb_fifo.c:921:0: style: The function 'tu_fifo_advance_write_pointer' is never used. [unusedFunction]
+
+^
+src/common/tusb_fifo.c:670:0: style: The function 'tu_fifo_correct_read_pointer' is never used. [unusedFunction]
+
+^
+src/common/tusb_fifo.c:664:0: style: The function 'tu_fifo_overflowed' is never used. [unusedFunction]
+
+^
+src/common/tusb_fifo.c:770:0: style: The function 'tu_fifo_peek_n' is never used. [unusedFunction]
+
+^
+src/common/tusb_fifo.c:729:0: style: The function 'tu_fifo_read_n_const_addr_full_words' is never used. [unusedFunction]
+
+^
+src/common/tusb_fifo.c:856:0: style: The function 'tu_fifo_write_n_const_addr_full_words' is never used. [unusedFunction]
+
+^
+src/typec/usbc.c:65:0: style: The function 'tuc_inited' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:268:0: style: The function 'tud_audio_get_req_entity_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:236:0: style: The function 'tud_audio_get_req_ep_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:253:0: style: The function 'tud_audio_get_req_itf_cb' is never used. [unusedFunction]
+
+^
+examples/device/uac2_headset/src/main.c:360:0: style: The function 'tud_audio_rx_done_pre_read_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_test_multi_rate/src/main.c:163:0: style: The function 'tud_audio_set_itf_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:434:0: style: The function 'tud_audio_set_itf_close_EP_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:188:0: style: The function 'tud_audio_set_req_entity_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:150:0: style: The function 'tud_audio_set_req_ep_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:169:0: style: The function 'tud_audio_set_req_itf_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:407:0: style: The function 'tud_audio_tx_done_post_load_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:392:0: style: The function 'tud_audio_tx_done_pre_load_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/main.c:130:0: style: The function 'tud_cdc_line_state_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/main.c:146:0: style: The function 'tud_cdc_rx_cb' is never used. [unusedFunction]
+
+^
+examples/device/webusb_serial/src/usb_descriptors.c:170:0: style: The function 'tud_descriptor_bos_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/usb_descriptors.c:109:0: style: The function 'tud_descriptor_configuration_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/usb_descriptors.c:67:0: style: The function 'tud_descriptor_device_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_dual_ports/src/usb_descriptors.c:179:0: style: The function 'tud_descriptor_device_qualifier_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_dual_ports/src/usb_descriptors.c:187:0: style: The function 'tud_descriptor_other_speed_configuration_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/usb_descriptors.c:133:0: style: The function 'tud_descriptor_string_cb' is never used. [unusedFunction]
+
+^
+examples/device/dfu/src/main.c:191:0: style: The function 'tud_dfu_abort_cb' is never used. [unusedFunction]
+
+^
+examples/device/dfu/src/main.c:198:0: style: The function 'tud_dfu_detach_cb' is never used. [unusedFunction]
+
+^
+examples/device/dfu/src/main.c:147:0: style: The function 'tud_dfu_download_cb' is never used. [unusedFunction]
+
+^
+examples/device/dfu/src/main.c:126:0: style: The function 'tud_dfu_get_timeout_cb' is never used. [unusedFunction]
+
+^
+examples/device/dfu/src/main.c:166:0: style: The function 'tud_dfu_manifest_cb' is never used. [unusedFunction]
+
+^
+examples/device/dfu_runtime/src/main.c:114:0: style: The function 'tud_dfu_runtime_reboot_to_dfu_cb' is never used. [unusedFunction]
+
+^
+examples/device/dfu/src/main.c:179:0: style: The function 'tud_dfu_upload_cb' is never used. [unusedFunction]
+
+^
+examples/device/hid_boot_interface/src/usb_descriptors.c:87:0: style: The function 'tud_hid_descriptor_report_cb' is never used. [unusedFunction]
+
+^
+examples/device/hid_boot_interface/src/main.c:196:0: style: The function 'tud_hid_get_report_cb' is never used. [unusedFunction]
+
+^
+examples/device/hid_boot_interface/src/main.c:184:0: style: The function 'tud_hid_report_complete_cb' is never used. [unusedFunction]
+
+^
+examples/device/hid_boot_interface/src/main.c:172:0: style: The function 'tud_hid_set_protocol_cb' is never used. [unusedFunction]
+
+^
+examples/device/hid_boot_interface/src/main.c:210:0: style: The function 'tud_hid_set_report_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:109:0: style: The function 'tud_mount_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/msc_disk.c:155:0: style: The function 'tud_msc_capacity_cb' is never used. [unusedFunction]
+
+^
+examples/device/msc_dual_lun/src/msc_disk_dual.c:209:0: style: The function 'tud_msc_get_maxlun_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/msc_disk.c:124:0: style: The function 'tud_msc_inquiry_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/msc_disk.c:201:0: style: The function 'tud_msc_is_writable_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/msc_disk.c:188:0: style: The function 'tud_msc_read10_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/msc_disk.c:234:0: style: The function 'tud_msc_scsi_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/msc_disk.c:166:0: style: The function 'tud_msc_start_stop_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/msc_disk.c:139:0: style: The function 'tud_msc_test_unit_ready_cb' is never used. [unusedFunction]
+
+^
+examples/device/cdc_msc/src/msc_disk.c:214:0: style: The function 'tud_msc_write10_cb' is never used. [unusedFunction]
+
+^
+examples/device/net_lwip_webserver/src/main.c:217:0: style: The function 'tud_network_init_cb' is never used. [unusedFunction]
+
+^
+test/fuzz/net_fuzz.cc:76:0: style: The function 'tud_network_link_state_cb' is never used. [unusedFunction]
+
+^
+examples/device/net_lwip_webserver/src/main.c:171:0: style: The function 'tud_network_recv_cb' is never used. [unusedFunction]
+
+^
+examples/device/net_lwip_webserver/src/main.c:194:0: style: The function 'tud_network_xmit_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:130:0: style: The function 'tud_resume_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:123:0: style: The function 'tud_suspend_cb' is never used. [unusedFunction]
+
+^
+examples/device/audio_4_channel_mic/src/main.c:115:0: style: The function 'tud_umount_cb' is never used. [unusedFunction]
+
+^
+examples/device/webusb_serial/src/main.c:169:0: style: The function 'tud_vendor_control_xfer_cb' is never used. [unusedFunction]
+
+^
+examples/device/video_capture/src/main.c:224:0: style: The function 'tud_video_commit_cb' is never used. [unusedFunction]
+
+^
+examples/device/video_capture/src/main.c:216:0: style: The function 'tud_video_frame_xfer_complete_cb' is never used. [unusedFunction]
+
+^
+examples/host/cdc_msc_hid/src/cdc_app.c:88:0: style: The function 'tuh_cdc_mount_cb' is never used. [unusedFunction]
+
+^
+examples/host/cdc_msc_hid/src/cdc_app.c:76:0: style: The function 'tuh_cdc_rx_cb' is never used. [unusedFunction]
+
+^
+examples/host/cdc_msc_hid/src/cdc_app.c:107:0: style: The function 'tuh_cdc_umount_cb' is never used. [unusedFunction]
+
+^
+examples/dual/host_hid_to_device_cdc/src/main.c:148:0: style: The function 'tuh_hid_mount_cb' is never used. [unusedFunction]
+
+^
+examples/dual/host_hid_to_device_cdc/src/main.c:259:0: style: The function 'tuh_hid_report_received_cb' is never used. [unusedFunction]
+
+^
+examples/dual/host_hid_to_device_cdc/src/main.c:178:0: style: The function 'tuh_hid_umount_cb' is never used. [unusedFunction]
+
+^
+examples/host/bare_api/src/main.c:83:0: style: The function 'tuh_mount_cb' is never used. [unusedFunction]
+
+^
+examples/host/cdc_msc_hid/src/msc_app.c:58:0: style: The function 'tuh_msc_mount_cb' is never used. [unusedFunction]
+
+^
+examples/host/cdc_msc_hid/src/msc_app.c:66:0: style: The function 'tuh_msc_umount_cb' is never used. [unusedFunction]
+
+^
+examples/host/bare_api/src/main.c:93:0: style: The function 'tuh_umount_cb' is never used. [unusedFunction]
+
+^
+hw/bsp/ch32v307/boards/ch32v307v-r1-1v0/debug_uart.c:72:0: style: The function 'uart_sync' is never used. [unusedFunction]
+
+^
+src/device/usbd_control.c:146:0: style: The function 'usbd_control_reset' is never used. [unusedFunction]
+
+^
+src/device/usbd_control.c:152:0: style: The function 'usbd_control_set_complete_callback' is never used. [unusedFunction]
+
+^
+src/device/usbd_control.c:158:0: style: The function 'usbd_control_set_request' is never used. [unusedFunction]
+
+^
+src/device/usbd_control.c:169:0: style: The function 'usbd_control_xfer_cb' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
